@@ -145,6 +145,7 @@ h1{
 	font-size: 1.875rem;
 	transform: translateX(-50%);
 	font-weight: 500;
+	line-height: 50px;
 	color:  #330867;
 }
 h1 span{
