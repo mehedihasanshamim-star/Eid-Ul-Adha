@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+*{
+	margin:0;
+	padding:0;
+	scroll-behavior: smooth;
+}
+p,
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+a:focus,
+button:focus,
+input:focus{
+	outline: none;
+}
+a:hover,
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Parisienne', cursive;
+	overflow: hidden;
+}
+
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../images/sky.jpg);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+.highway{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	height: 200px;
+	width: 500%;
+	display: block;
+	background-repeat: repeat-x;
+	background-image: url(../images/road.jpg);
+	animation: highway 10s linear infinite;
+}
+@keyframes highway{
+	100%{
+		transform: translateX(-3400px);
+	}
+}
+.city{
+	position: absolute;
+	bottom: 200px;
+	left: 0;
+	right: 0;
+	display: block;
+	z-index: 1;
+	height: 250px;
+	width: 500%;
+	background-image: url(../images/city.png);
+	background-repeat: repeat-x;
+	animation: city 20s linear infinite;
+}
+@keyframes city{
+	100%{
+		transform: translateX(-1400px);
+	}
+}
+.cow{
+	width: 400px;
+	left: 50%;
+	bottom: 100px;
+	position: absolute;
+	z-index: 2;
+	transform: translateX(-50%);
+}
+.cow img{
+	width: 100%;
+	animation: cow 1s linear infinite;
+}
+@keyframes cow{
+	100%{
+		transform: translateY(-3px);
+	}
+	50%{
+		transform: translateY(1px);
+	}
+	0%{
+		transform: translateY(-1px);
+	}
+}
+
+.grass{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9;
+	height: 100px;
+	width: 500%;
+	background-image: url(../images/grass-5.png);
+	background-repeat: repeat-x;
+	background-size: contain;
+	animation: grass 20s linear infinite;
+}
+@keyframes grass{
+	100%{
+		transform: translateX(-3400px);
+	}
+}
+.eid{
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	left: 40px;
+	top: 0px;
+	background-image: url(../images/eid-4.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: eid 1s linear infinite;
+}
+@keyframes eid{
+	100%{
+		transform: translateY(-1px);
+	}
+	50%{
+		transform: translateY(1px);
+	}
+	0%{
+		transform: translateY(-1px);
+	}
+}
+h1{
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	font-size: 1.875rem;
+	transform: translateX(-50%);
+	font-weight: 500;
+	color:  #330867;
+}
+h1 span{
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+.typed-cursor{
+	opacity: 0 !important;
+}
+.corona{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	left: 500px;
+	top: 30%;
+	background-image: url(../images/report-1.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: corona-1 2s linear infinite;
+	animation-fill-mode: both;
+}
+@keyframes corona-1{
+	100%{
+		transform: scale(80);
+	}
+	50%{
+		transform: translateY(0);
+	}
+	0%{
+		transform: translateY(40%);
+	}
+}
+.corona-2{
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	right: 450px;
+	top: 50%;
+	background-image: url(../images/report-2.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	animation: corona-2 4s linear infinite;
+	animation-fill-mode: both;
+}
+@keyframes corona-2{
+	100%{
+		transform: translateY(80px);
+	}
+	80%{
+		transform: translateX(100px);
+	}
+	40%{
+		transform: translateY(40%);
+	}
+}
